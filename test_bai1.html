@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nhập 2 số a và b (a < b): </h1>
+    a:
+    <input type="number" id="inputA"><br>
+   <br> b:
+    <input type="number" id="inputB"> <br>
+    <button onclick="SumPrimeNumber()">Tính tổng số nguyên tố</button><br/><br/>
+    <script >
+    function isPrime(b) {
+
+        let prime = true;
+        if (b < 2) return prime = false;
+        let i = 2;
+        while (i < b) {
+            if (b % i == 0) {
+                return false
+            }
+            i++;
+        }
+        return true;
+    }
+    function SumPrimeNumber(a, b) {
+        var a = document.getElementById("inputA").value;
+        var b = document.getElementById('inputB').value;
+        a = Number(a)
+        b = Number(b)
+        // pa
+        if (a < 0 || b < 0) {
+            alert("a và b phải lớn hơn 0")
+        } else if (a > b) {
+            alert("a phải bé hơn b")
+        } else {
+
+            console.log(typeof (a), b)
+            let i = a + 1, isCurrentPrime = false, sumPrime = 0;
+            while (i < b) {
+
+                if (isPrime(i)) sumPrime += i;
+                ++i;
+            }
+
+            console.log(sumPrime);
+            
+            alert(sumPrime );
+
+           
+        }
+    }
+</script>
+    
+</body>
+</html>
