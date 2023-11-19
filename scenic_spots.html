@@ -19,7 +19,7 @@
                 <h1 class="font" style="margin-top: 0px;font-size:20px ; color:rgb(4, 77, 4)">Địa điểm du lịch nổi tiếng nhất Hải
                     Dương</h1>
                 <ol class="mennu" style=" border-radius: 20px;">
-                    <li><a href="#chuaconson" id="a1" onclick="onCLickA(event, 'a1')">Chùa Côn Sơn</a> </li>
+                    <li><a href="#chuaconson" id="a1" onclick="onClickA(event, 'a1')">Chùa Côn Sơn</a> </li>
                     <li><a href="#danhthang" id="a2" onclick="onClickA(event, 'a2')">Khu di tích danh thắng Côn Sơn</a></li>
                     <li><a href="#giengngoc" id="a3" onclick="onClickA(event, 'a3')">Giếng Ngọc</a></li>
                     <li><a href="#kiepbac" id="a4" onclick="onClickA(event, 'a4')">Đền Kiếp Bạc</a></li>
@@ -274,17 +274,31 @@
 </body>
 
 <script>
-  // function onCLickA(event, id){
-    //    var el = document.getElementById(id);
-//el.style.fontWeight = 'bold';
-//el.style.color = 'red';
-//el.style.fontSize = '150%';
+   function onClickA(event, id) {
+
+
+for (let i = 1; i < 9; i++) {
+    let el = document.getElementById("a" + i);
+    el.style.color = 'green';
+    el.style.fontWeight = 'var(--bs-body-font-weight)';
+el.style.textDecorationLine='none';
+
+
+}
+let curEl = document.getElementById(id);
+curEl.style.fontWeight = 'bold';
+curEl.style.color = 'red';
+curEl.style.textDecorationLine='underline';
 
 
 
-//    }
+
+}
+
+</script>
+
+
+
    
-    </script>
-
 
 </html>
