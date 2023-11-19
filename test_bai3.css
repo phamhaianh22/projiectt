@@ -1,0 +1,100 @@
+.layout{
+    width: Hug (1,213px)
+height: Hug (830px)
+top: 173px
+left: 193px
+padding: 100px
+border-radius: 16px
+gap: 70px
+
+
+}
+
+
+.a{
+    padding: 50px 50px 50px 50px;
+    
+    background:white;
+    border-radius: 5px;
+    
+    
+    
+    
+    
+    
+}
+.p{
+    font-family: Merriweather;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.b{
+    display:flex;
+    justify-content: space-between;
+
+    
+
+
+}
+
+
+
+.i{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align:left;
+}
+.f-grid {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.f-grid-col {
+   display:flex;
+    
+    margin-bottom: 6rem;
+   padding-right: 100px;
+}
+.font{
+    font-family: Merriweather;
+font-size: 18px;
+font-weight: 900;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.m{
+   
+    padding-left: 5px;
+    padding-top:10px;
+}
+.s{
+    font-family: Poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+border-style: groove;
+border-radius: 4px;
+color: #516FD4;
+
+
+}
+.n{
+    font-family: Poppins;
+                       font-size: 14px;
+                       font-weight: 500;
+                       line-height: 21px;
+                       letter-spacing: 0em;
+                       text-align: left;
+}
+
